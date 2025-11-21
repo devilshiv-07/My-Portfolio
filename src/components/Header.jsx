@@ -1,19 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useTheme } from '../contexts/ThemeContext'
 import { gsap } from 'gsap'
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import Logo from '../assets/Logo.png'
-
-// Register ScrollToPlugin
-gsap.registerPlugin(ScrollToPlugin)
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme()
-  
-  // Debug: Log theme value changes
-  useEffect(() => {
-    console.log('Header component - theme value:', theme)
-  }, [theme])
+  const navigate = useNavigate()
+  const location = useLocation()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const headerRef = useRef(null)
   const navRef = useRef(null)
@@ -21,12 +15,12 @@ const Header = () => {
   const overlayRef = useRef(null)
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', path: '/' },
+    { name: 'About', path: '/about' },
+    { name: 'Skills', path: '/skills' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Experience', path: '/experience' },
+    { name: 'Contact', path: '/contact' },
   ]
 
   useEffect(() => {
@@ -115,19 +109,11 @@ const Header = () => {
     setMobileMenuOpen(false)
   }
 
-  const handleNavClick = (e, href) => {
+  const handleNavClick = (e, path) => {
     e.preventDefault()
-    // Smooth scroll animation
-    const target = document.querySelector(href)
-    if (target) {
-      const headerHeight = 80
-      const targetPosition = target.offsetTop - headerHeight
-      
-      gsap.to(window, {
-        duration: 1,
-        scrollTo: { y: targetPosition, autoKill: false },
-        ease: 'power2.inOut',
-      })
+    // Navigate to the new route
+    if (location.pathname !== path) {
+      navigate(path)
     }
     setMobileMenuOpen(false)
   }
@@ -169,15 +155,19 @@ const Header = () => {
             {/* Navigation Links - Desktop Only */}
             <nav ref={navRef} className="hidden lg:flex items-center space-x-8">
               {navLinks.map((link, index) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  className="text-black dark:text-white hover:text-red-600 dark:hover:text-red-500 font-medium transition-colors duration-200 relative group"
+                  to={link.path}
+                  onClick={(e) => handleNavClick(e, link.path)}
+                  className={`text-black dark:text-white hover:text-red-600 dark:hover:text-red-500 font-medium transition-colors duration-200 relative group ${
+                    location.pathname === link.path ? 'text-red-600 dark:text-red-500' : ''
+                  }`}
                 >
                   {link.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 dark:bg-red-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                  <span className={`absolute bottom-0 left-0 h-0.5 bg-red-600 dark:bg-red-500 transition-all duration-300 ${
+                    location.pathname === link.path ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}></span>
+                </Link>
               ))}
             </nav>
 
@@ -189,7 +179,6 @@ const Header = () => {
                 onClick={(e) => {
                   e.preventDefault()
                   e.stopPropagation()
-                  console.log('Desktop button clicked, current theme:', theme)
                   toggleTheme()
                 }}
                 className="hidden lg:flex p-2 rounded-lg bg-slate-100/80 dark:bg-slate-900/80 backdrop-blur-sm hover:bg-slate-200/80 dark:hover:bg-slate-800/80 text-black dark:text-white transition-all duration-200 shadow-md hover:shadow-lg hover:scale-110"
@@ -285,14 +274,18 @@ const Header = () => {
           {/* Navigation Links */}
           <nav className="flex-1 space-y-2">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
-                className="block px-4 py-3 text-lg text-black dark:text-white hover:text-red-600 dark:hover:text-red-500 hover:bg-slate-100/50 dark:hover:bg-slate-900/50 rounded-lg font-medium transition-all duration-200"
+                to={link.path}
+                onClick={(e) => handleNavClick(e, link.path)}
+                className={`block px-4 py-3 text-lg rounded-lg font-medium transition-all duration-200 ${
+                  location.pathname === link.path
+                    ? 'text-red-600 dark:text-red-500 bg-slate-100/50 dark:bg-slate-900/50'
+                    : 'text-black dark:text-white hover:text-red-600 dark:hover:text-red-500 hover:bg-slate-100/50 dark:hover:bg-slate-900/50'
+                }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -303,7 +296,6 @@ const Header = () => {
               onClick={(e) => {
                 e.preventDefault()
                 e.stopPropagation()
-                console.log('Mobile button clicked, current theme:', theme)
                 toggleTheme()
               }}
               className="w-full flex items-center justify-center p-3 rounded-lg bg-slate-100/80 dark:bg-slate-900/80 backdrop-blur-sm hover:bg-slate-200/80 dark:hover:bg-slate-800/80 text-black dark:text-white transition-all duration-200 shadow-md"
