@@ -1,4 +1,7 @@
 @import "tailwindcss";
 
-/* Tailwind v4 dark mode - using @variant directive */
+/* Tailwind v4 dark mode configuration */
+/* stylelint-disable-next-line at-rule-no-unknown */
 @variant dark (.dark &);
+
+/* Suppress CSS linter warning for Tailwind v4 @variant directive */

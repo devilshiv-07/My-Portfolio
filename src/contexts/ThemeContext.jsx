@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react'
+import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react'
 
 const ThemeContext = createContext(undefined)
 
@@ -39,29 +39,17 @@ export const ThemeProvider = ({ children }) => {
       root.classList.add('dark')
     }
     
-    // Force a reflow to ensure styles are recalculated
-    void root.offsetHeight
-    
     // Save to localStorage
     localStorage.setItem('theme', theme)
-    
-    // Debug log
-    console.log('Theme updated to:', theme)
-    console.log('HTML classes:', root.className)
-    console.log('Has dark class?', root.classList.contains('dark'))
   }, [theme])
 
   // Step 3: Toggle function that updates state
-  const toggleTheme = React.useCallback(() => {
-    setTheme((prevTheme) => {
-      const newTheme = prevTheme === 'dark' ? 'light' : 'dark'
-      console.log('toggleTheme: Changing theme from', prevTheme, 'to', newTheme)
-      return newTheme
-    })
+  const toggleTheme = useCallback(() => {
+    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'))
   }, []) // Empty deps - we use functional update so we don't need theme
 
   // Step 4: Context value - create new object when theme or toggleTheme changes
-  const value = React.useMemo(() => ({
+  const value = useMemo(() => ({
     theme,
     toggleTheme
   }), [theme, toggleTheme])
