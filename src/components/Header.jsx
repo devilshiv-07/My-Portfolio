@@ -3,6 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useTheme } from '../contexts/ThemeContext'
 import { gsap } from 'gsap'
 import Logo from '../assets/Logo.png'
+import { navLinks } from '../constants/navigation'
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme()
@@ -13,15 +14,6 @@ const Header = () => {
   const navRef = useRef(null)
   const sidebarRef = useRef(null)
   const overlayRef = useRef(null)
-
-  const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Skills', path: '/skills' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Experience', path: '/experience' },
-    { name: 'Contact', path: '/contact' },
-  ]
 
   useEffect(() => {
     // Animate header entrance

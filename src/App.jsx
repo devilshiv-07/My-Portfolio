@@ -5,6 +5,7 @@ import Header from './components/Header'
 import PageTransition from './components/PageTransition'
 import Home from './pages/Home'
 import About from './pages/About'
+import Skills from './pages/Skills'
 
 const AppContent = () => {
   const location = useLocation()
@@ -16,6 +17,7 @@ const AppContent = () => {
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
         </Routes>
       </PageTransition>
     </div>
