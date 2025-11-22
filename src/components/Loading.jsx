@@ -134,7 +134,7 @@ const Loading = ({ onComplete }) => {
     })
 
     // Animate particles
-    particles.forEach((particle, index) => {
+    particles.forEach((particle) => {
       gsap.to(particle, {
         x: `+=${(Math.random() - 0.5) * 150}`,
         y: `+=${(Math.random() - 0.5) * 150}`,

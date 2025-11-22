@@ -7,6 +7,8 @@ import Loading from './components/Loading'
 import Home from './pages/Home'
 import About from './pages/About'
 import Skills from './pages/Skills'
+import Projects from './pages/Projects'
+import ProjectDetail from './pages/ProjectDetail'
 
 const AppContent = () => {
   const location = useLocation()
@@ -27,6 +29,8 @@ const AppContent = () => {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/skills" element={<Skills />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:projectId" element={<ProjectDetail />} />
             </Routes>
           </PageTransition>
         </div>
