@@ -127,18 +127,21 @@ const Header = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo - Always visible */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 group relative">
+              {/* Glow effect behind logo and text */}
+              <div className="absolute inset-0 -z-10 rounded-lg bg-red-600/0 dark:bg-red-500/0 group-hover:bg-red-600/10 dark:group-hover:bg-red-500/10 blur-lg transition-all duration-300 group-hover:scale-110"></div>
+              
               <img 
                 src={Logo} 
                 alt="Logo" 
-                className="w-16 h-16 object-contain"
+                className="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-125 group-hover:drop-shadow-[0_0_12px_rgba(220,38,38,0.6)]"
               />
               {/* Name and role - hidden on mobile/tablet, visible on desktop */}
               <div className="hidden lg:block">
-                <h1 className="text-lg font-bold text-black dark:text-white">
+                <h1 className="text-lg font-bold text-black dark:text-white transition-all duration-300 group-hover:text-red-600 dark:group-hover:text-red-500 group-hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.8)]">
                   SHIVANK TRIPATHI
                 </h1>
-                <p className="text-xs text-black dark:text-slate-300">
+                <p className="text-xs text-black dark:text-slate-300 transition-all duration-300 group-hover:text-red-600 dark:group-hover:text-red-500 group-hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.8)]">
                   FULL-STACK DEVELOPER
                 </p>
               </div>
@@ -237,17 +240,20 @@ const Header = () => {
         <div className="flex flex-col h-full p-6">
           {/* Sidebar Header */}
           <div className="flex items-center justify-between mb-8 pb-6 border-b border-red-600/20 dark:border-red-500/20">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 group relative">
+              {/* Glow effect behind logo and text */}
+              <div className="absolute inset-0 -z-10 rounded-lg bg-red-600/0 dark:bg-red-500/0 group-hover:bg-red-600/10 dark:group-hover:bg-red-500/10 blur-lg transition-all duration-300 group-hover:scale-110"></div>
+              
               <img 
                 src={Logo} 
                 alt="Logo" 
-                className="w-14 h-14 object-contain"
+                className="w-14 h-14 object-contain transition-transform duration-300 group-hover:scale-125 group-hover:drop-shadow-[0_0_12px_rgba(220,38,38,0.6)]"
               />
               <div>
-                <h1 className="text-base font-bold text-black dark:text-white">
+                <h1 className="text-base font-bold text-black dark:text-white transition-all duration-300 group-hover:text-red-600 dark:group-hover:text-red-500 group-hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.8)]">
                   SHIVANK TRIPATHI
                 </h1>
-                <p className="text-xs text-black dark:text-slate-300">
+                <p className="text-xs text-black dark:text-slate-300 transition-all duration-300 group-hover:text-red-600 dark:group-hover:text-red-500 group-hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.8)]">
                   FULL-STACK DEVELOPER
                 </p>
               </div>
