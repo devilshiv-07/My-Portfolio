@@ -81,7 +81,7 @@ const PageTransition = ({ children, location }) => {
   return (
     <div ref={containerRef} className="relative w-full h-full">
       {/* 5 Vertical Lines for animation - covering screen horizontally */}
-      <div className="fixed inset-0 z-[9999] pointer-events-none overflow-hidden">
+      <div className="fixed inset-0 z-9999 pointer-events-none overflow-hidden">
         {[0, 1, 2, 3, 4].map((index) => (
           <div
             key={`line-${index}-${location.pathname}`}

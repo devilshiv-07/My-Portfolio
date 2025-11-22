@@ -232,7 +232,7 @@ const Loading = ({ onComplete }) => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[9999] bg-black flex items-center justify-center overflow-hidden"
+      className="fixed inset-0 z-9999 bg-black flex items-center justify-center overflow-hidden"
     >
       {/* Animated Background Rings */}
       <div className="absolute inset-0 flex items-center justify-center">
@@ -330,7 +330,7 @@ const Loading = ({ onComplete }) => {
           ref={textRef}
           className="text-center mb-10"
         >
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-red-600 via-red-500 to-red-600 bg-clip-text text-transparent mb-4 tracking-wider">
+          <h2 className="text-5xl md:text-6xl font-bold bg-linear-to-r from-red-600 via-red-500 to-red-600 bg-clip-text text-transparent mb-4 tracking-wider">
             SHIVANK TRIPATHI
           </h2>
           <p className="text-lg md:text-xl text-red-400 font-light tracking-wide">

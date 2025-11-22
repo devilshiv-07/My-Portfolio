@@ -228,7 +228,7 @@ const Header = () => {
       {/* Sidebar - Mobile/Tablet - Hidden by default */}
       <div
         ref={sidebarRef}
-        className="fixed top-0 right-0 h-full w-full sm:max-w-sm bg-red-50/98 dark:bg-black/95 z-50 lg:hidden shadow-2xl backdrop-blur-[12px]"
+        className="fixed top-0 right-0 h-full w-full sm:max-w-sm bg-red-50/98 dark:bg-black/95 z-50 lg:hidden shadow-2xl backdrop-blur-md"
         style={{
           backdropFilter: 'blur(12px) saturate(180%)',
           WebkitBackdropFilter: 'blur(12px) saturate(180%)',

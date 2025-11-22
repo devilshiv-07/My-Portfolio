@@ -75,7 +75,7 @@ const Skills = () => {
             >
               {/* Category Title */}
               <div className="mb-4 sm:mb-6 md:mb-8 lg:mb-6">
-                <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold bg-gradient-to-r ${category.gradientColors.light} dark:bg-gradient-to-r ${category.gradientColors.dark} bg-clip-text text-transparent`}>
+                <h2 className={`text-2xl sm:text-3xl md:text-4xl lg:text-3xl font-bold bg-linear-to-r ${category.gradientColors.light} dark:bg-linear-to-r ${category.gradientColors.dark} bg-clip-text text-transparent`}>
                   {category.category}
                 </h2>
               </div>
