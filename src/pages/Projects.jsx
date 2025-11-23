@@ -83,7 +83,7 @@ const Projects = () => {
     <section className="min-h-screen flex flex-col justify-center pt-28 pb-16 sm:pt-32 sm:pb-20 md:pt-36 md:pb-24 lg:pt-24 lg:pb-8 bg-red-50 dark:bg-black transition-colors duration-300 overflow-y-auto">
       <div ref={containerRef} className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 max-w-7xl mx-auto">
         {/* Title */}
-        <div ref={titleRef} className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-10">
+        <div ref={titleRef} className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-10 lg:mt-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold text-red-600 dark:text-red-500 leading-tight tracking-tight mb-2">
             Projects
           </h1>
