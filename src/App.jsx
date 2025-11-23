@@ -11,6 +11,7 @@ import Projects from './pages/Projects'
 import ProjectDetail from './pages/ProjectDetail'
 import Experience from './pages/Experience'
 import ExperienceDetail from './pages/ExperienceDetail'
+import Contact from './pages/Contact'
 
 const AppContent = () => {
   const location = useLocation()
@@ -35,6 +36,7 @@ const AppContent = () => {
               <Route path="/projects/:projectId" element={<ProjectDetail />} />
               <Route path="/experience" element={<Experience />} />
               <Route path="/experience/:experienceId" element={<ExperienceDetail />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </PageTransition>
         </div>

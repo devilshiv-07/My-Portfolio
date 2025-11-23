@@ -1,5 +1,6 @@
 import React from 'react'
 import CoverPhoto from '../assets/cover.JPG'
+import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 2xl:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 md:gap-20 lg:gap-12 xl:gap-16 items-center w-full">
           {/* Left Side - Text Content */}
-          <div className="text-center lg:text-left lg:ml-12">
+          <div className="text-center lg:text-left lg:ml-12 lg:mt-6">
             <p className="text-lg sm:text-xl md:text-2xl text-black dark:text-slate-300 font-medium mb-2 sm:mb-3 md:mb-4 lg:mb-4">
               Hello, I'm
             </p>
@@ -19,9 +20,49 @@ const Home = () => {
               SHIVANK TRIPATHI
             </h1>
             
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-semibold text-black dark:text-slate-300 mb-4 sm:mb-5 md:mb-6 lg:mb-5">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-2xl font-semibold text-black dark:text-slate-300 mb-3 sm:mb-4 md:mb-5 lg:mb-4">
               Full-Stack Developer
             </h2>
+            
+            {/* Social Icons */}
+            <div className="flex items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-4 sm:mb-5 md:mb-6 lg:mb-5">
+              <a
+                href="https://www.instagram.com/shivank618/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-red-600 dark:bg-red-500 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-125"
+                aria-label="Instagram"
+              >
+                {/* Glow effect */}
+                <div className="absolute inset-0 rounded-full bg-red-600 dark:bg-red-500 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 scale-150"></div>
+                {/* Icon */}
+                <FaInstagram className="relative z-10 w-5 h-5 sm:w-6 sm:h-6 text-black dark:text-slate-300 transition-all duration-300" />
+              </a>
+              <a
+                href="https://github.com/devilshiv-07"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-red-600 dark:bg-red-500 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-125"
+                aria-label="GitHub"
+              >
+                {/* Glow effect */}
+                <div className="absolute inset-0 rounded-full bg-red-600 dark:bg-red-500 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 scale-150"></div>
+                {/* Icon */}
+                <FaGithub className="relative z-10 w-5 h-5 sm:w-6 sm:h-6 text-black dark:text-slate-300 transition-all duration-300" />
+              </a>
+              <a
+                href="https://linkedin.com/in/shivanktripathi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-red-600 dark:bg-red-500 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-125"
+                aria-label="LinkedIn"
+              >
+                {/* Glow effect */}
+                <div className="absolute inset-0 rounded-full bg-red-600 dark:bg-red-500 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300 scale-150"></div>
+                {/* Icon */}
+                <FaLinkedin className="relative z-10 w-5 h-5 sm:w-6 sm:h-6 text-black dark:text-slate-300 transition-all duration-300" />
+              </a>
+            </div>
             
             <p className="text-base sm:text-lg md:text-xl lg:text-base leading-relaxed px-2 sm:px-4 md:px-6 lg:px-0 text-black dark:text-slate-400">
               Specializing in frontend development with expertise in creating modern, 
