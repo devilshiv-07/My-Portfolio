@@ -74,6 +74,8 @@ const ExperienceDetail = () => {
                     src={experience.logo}
                     alt={`${experience.company} Logo`}
                     className="w-full h-full object-contain"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>
@@ -243,4 +245,5 @@ const ExperienceDetail = () => {
 }
 
 export default ExperienceDetail
+
 

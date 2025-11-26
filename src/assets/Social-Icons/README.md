@@ -8,3 +8,4 @@ Please add the following PNG files to this folder:
 
 The icons will automatically invert to white in dark mode using CSS filters.
 
+

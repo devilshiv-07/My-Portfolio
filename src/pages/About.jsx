@@ -26,6 +26,8 @@ const About = () => {
                     src={AboutImage} 
                     alt="Shivank Tripathi" 
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 
