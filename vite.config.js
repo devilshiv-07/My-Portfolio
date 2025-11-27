@@ -10,4 +10,21 @@ export default defineConfig({
       // Explicitly enable dark mode
     })
   ],
+  build: {
+    // Optimize chunk size
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'gsap-vendor': ['gsap'],
+          'icons-vendor': ['react-icons']
+        }
+      }
+    }
+  },
+  // Performance optimizations
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom', 'gsap', 'react-icons']
+  }
 })

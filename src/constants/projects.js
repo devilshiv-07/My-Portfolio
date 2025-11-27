@@ -6,6 +6,7 @@ import GamingSiteImage from '../assets/Animation-Projects/GamingSite-Project2.pn
 import AIFactorImage from '../assets/Animation-Projects/AI-Factor_Landing_Page-Project3.png'
 import RestroPOSImage from '../assets/Full-Stack-Projects/Restro_Restaurant_POS_SYStem-Project1.png'
 import BlogAppImage from '../assets/Full-Stack-Projects/Blog-App-Project2.png'
+import CodeFlexImage from '../assets/Full-Stack-Projects/CodeFlex-Project3.png'
 
 export const projectsData = [
   {
@@ -358,6 +359,61 @@ export const projectsData = [
           'Secure file upload handling',
           'Toast notifications',
           'Modern UI with Framer Motion animations'
+        ]
+      },
+      {
+        id: 'codeflex',
+        name: 'CodeFlex',
+        subHeading: 'AI-Powered Development Platform',
+        description: 'An advanced full-stack development platform featuring AI code generation, real-time collaboration, and voice integration. Built with Next.js 15, Convex backend, and multiple AI services.',
+        image: CodeFlexImage,
+        githubLink: 'https://github.com/devilshiv-07/CodeFlex',
+        liveLink: 'https://code-flex-murex.vercel.app/',
+        techStack: [
+          'Next.js 15',
+          'React 19',
+          'Convex',
+          'Clerk Authentication',
+          'Google Generative AI',
+          'Vapi AI',
+          'TypeScript',
+          'Tailwind CSS',
+          'Radix UI',
+          'Lucide Icons'
+        ],
+        fullStackTopics: [
+          'Next.js 15 with Turbopack',
+          'React Server Components',
+          'Convex Backend Architecture',
+          'Clerk Authentication & User Management',
+          'Google Generative AI Integration',
+          'Voice AI Integration (Vapi)',
+          'Real-time Data Synchronization',
+          'TypeScript Type Safety',
+          'Radix UI Component Library',
+          'Modern UI/UX Design',
+          'API Route Handlers',
+          'Server Actions',
+          'Webhook Integration (Svix)',
+          'AI Code Generation',
+          'Responsive Design',
+          'Component Architecture',
+          'State Management',
+          'Authentication Flow'
+        ],
+        features: [
+          'AI-powered code generation and assistance',
+          'Voice-enabled development interface',
+          'Secure authentication with Clerk',
+          'Real-time collaboration with Convex',
+          'Google Generative AI integration',
+          'Modern and intuitive UI with Radix components',
+          'TypeScript for enhanced type safety',
+          'Responsive design across all devices',
+          'Webhook integration for real-time updates',
+          'Fast development with Next.js 15 Turbopack',
+          'Component-based architecture',
+          'Professional developer experience'
         ]
       }
     ]

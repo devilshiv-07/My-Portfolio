@@ -10,7 +10,7 @@
 
 This repository hosts my personal developer portfolio. It highlights my skills, projects, internships, and contact information with a fully responsive layout, dark/light themes, smooth animations, and GSAP-powered transitions. The project is optimized for fast load times with lazy-loaded images, eager hero assets, and async decoding to keep the UX snappy after deployment.
 
-Live site: **[https://www.aifactor.co/](https://www.aifactor.co/)** *(replace with your actual portfolio URL if different)*  
+Live site: **[shivanktripathi.vercel.app](https://shivanktripathi.vercel.app/)**
 
 ---
 
@@ -26,6 +26,17 @@ Live site: **[https://www.aifactor.co/](https://www.aifactor.co/)** *(replace wi
   - Lazy loading & async decoding for all non-critical imagery.
   - Eager loading for hero and project detail hero images.
   - Optimized asset pipeline via Vite + Tailwind JIT.
+  - Code splitting for React, GSAP, and React Icons vendors.
+  - Optimized chunk sizes for better caching.
+- **SEO Optimized**
+  - Complete meta tags for search engines.
+  - Open Graph and Twitter Card support.
+  - Robots.txt and sitemap ready.
+  - Semantic HTML structure.
+- **PWA Ready**
+  - Web app manifest for installability.
+  - Theme color support.
+  - Optimized for mobile and desktop.
 - **Responsive Design** across mobile, tablet, and desktop breakpoints.
 
 ---
@@ -102,6 +113,36 @@ npm run preview
 - Favor WebP/AVIF where supported; supply PNG/JPEG fallbacks if required.
 - All `<img>` tags already use `loading="lazy"` + `decoding="async"` except critical hero assets, which are prefetched using `fetchpriority="high"`.
 - For additional gains, serve the site via a CDN (Vercel, Netlify, Cloudflare) to take advantage of edge caching.
+
+---
+
+## 🎯 Recent Improvements
+
+### SEO & Performance
+- ✅ Added comprehensive meta tags (description, keywords, author)
+- ✅ Implemented Open Graph tags for social media sharing
+- ✅ Added Twitter Card support
+- ✅ Created robots.txt for search engine crawlers
+- ✅ Optimized HTML with semantic structure
+- ✅ Added theme color meta tag
+
+### PWA Support
+- ✅ Created manifest.json for web app installability
+- ✅ Added app icons configuration
+- ✅ Configured standalone display mode
+
+### Build Optimizations
+- ✅ Code splitting: Separated React, GSAP, and React Icons into vendor chunks
+- ✅ Improved caching strategy with manual chunks
+- ✅ Optimized bundle sizes (React: 43KB, GSAP: 69KB, Icons: 2.5KB)
+- ✅ Added preconnect hints for external resources
+
+### Content Updates
+- ✅ Added CodeFlex project (Next.js 15, Convex, Clerk, AI integration)
+- ✅ Updated skills section with 40+ technologies
+- ✅ Added custom skill icons (GSAP, Redux Toolkit, Clerk, Convex, etc.)
+- ✅ Added location to contact information
+- ✅ Improved professional title and branding
 
 ---
 

@@ -147,6 +147,13 @@ const Contact = () => {
       value: '+91 9153953678',
       link: 'https://wa.me/9153953678',
       color: 'text-green-600 dark:text-green-500'
+    },
+    {
+      icon: FaMapMarkerAlt,
+      label: 'Location',
+      value: 'Lucknow, UP, India',
+      link: 'https://maps.google.com/?q=Lucknow,India',
+      color: 'text-red-600 dark:text-red-500'
     }
   ]
 

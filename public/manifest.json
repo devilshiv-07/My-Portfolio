@@ -1,0 +1,25 @@
+{
+  "name": "Shivank Tripathi - Full-Stack Developer Portfolio",
+  "short_name": "Shivank's Portfolio",
+  "description": "Full-Stack Developer specializing in React, Next.js, Node.js, and modern web technologies",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#DC2626",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
