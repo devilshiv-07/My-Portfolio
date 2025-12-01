@@ -100,7 +100,7 @@ const Home = () => {
                     alt="Shivank Tripathi" 
                     className="w-full h-full object-cover transition-transform duration-800 group-hover:scale-110"
                     loading="eager"
-                    fetchpriority="high"
+                    fetchPriority="high"
                     decoding="async"
                   />
                 </div>
