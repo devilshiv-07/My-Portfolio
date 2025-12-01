@@ -8,99 +8,106 @@ export const experiencesData = [
     company: 'Agility AI',
     role: 'Frontend Developer Intern',
     type: 'Internship',
-    period: 'Jun 2024 - Aug 2024',
-    duration: '3 months',
-    location: 'Remote',
+    period: 'Aug 2025 - Present',
+    duration: '5 months',
+    location: 'Ghaziabad, Uttar Pradesh, India',
     logo: AgilityAILogo,
-    brief: 'Worked on building modern web applications using React and Next.js. Focused on creating responsive UI components and improving user experience.',
-    description: 'As a Frontend Developer Intern at Agility AI, I contributed to the development of cutting-edge web applications using modern technologies like React and Next.js. My responsibilities included creating reusable UI components, implementing responsive designs, and optimizing application performance.',
+    brief: 'Contributed to three core live products: Edumaniax (gamified EdTech platform), Invoicely (AI-integrated invoicing), and Test Paper Generator. Delivered end-to-end features from database to frontend integration.',
+    description: 'As a Frontend Developer Intern at Agility AI, I contributed to three core live products of the company. I worked on Edumaniax, a fast-growing gamified EdTech platform, developing new features, improving gameplay logic, enhancing UI/UX, optimizing APIs, and ensuring smooth student/teacher workflows. I also contributed to Invoicely, an AI-integrated invoicing platform, working on both frontend components and backend logic for invoice handling, storage, and AI processing. Additionally, I worked on the Test Paper Generator, building and maintaining features for generating exam papers with subjects, topics, question sets, and automated logic, including database structures, APIs, and UI integration.',
     responsibilities: [
-      'Developed responsive UI components using React and Tailwind CSS',
-      'Collaborated with the design team to implement pixel-perfect interfaces',
-      'Optimized application performance and loading times',
-      'Participated in code reviews and team meetings',
-      'Implemented state management using Redux and Context API'
+      'Contributed to Edumaniax: Developed new features, improved gameplay logic, enhanced UI/UX, optimized APIs, and ensured smooth student/teacher workflows',
+      'Contributed to Invoicely: Worked on frontend components and backend logic for invoice handling, storage, and AI processing',
+      'Contributed to Test Paper Generator: Built and maintained features for generating exam papers with subjects, topics, question sets, and automated logic',
+      'Delivered end-to-end features — from database schema and API development to frontend integration — ensuring smooth and scalable functionality across all platforms',
+      'Took responsibility for high-impact tasks, consistently meeting deadlines and maintaining production-quality code',
+      'Collaborated closely with the team, attended all meetings, participated in discussions, and contributed to building reliable, user-centered product features'
     ],
     techStack: [
       'React',
       'Next.js',
       'TypeScript',
-      'Tailwind CSS',
-      'Redux',
+      'Node.js',
+      'Database Design',
+      'API Development',
+      'AI Integration',
       'Git',
-      'REST APIs'
+      'Full-Stack Development'
     ],
     achievements: [
-      'Reduced page load time by 40% through code optimization',
-      'Built 15+ reusable React components',
-      'Improved mobile responsiveness across the application'
+      'Earned two GitHub badges due to consistent contributions and high activity',
+      'Demonstrated strong work ethic by working 10+ hours/day during tight deadlines to ensure timely delivery without compromising quality',
+      'Volunteered for additional tasks beyond assigned responsibilities, showing ownership and initiative',
+      'Delivered end-to-end features across three live products, ensuring smooth and scalable functionality'
     ]
   },
   {
     id: 'ai-factor',
     company: 'AI Factor',
-    role: 'Full-Stack Developer Intern',
+    role: 'Full-stack Developer',
     type: 'Internship',
-    period: 'Mar 2024 - May 2024',
+    period: 'Jun 2025 - Aug 2025',
     duration: '3 months',
-    location: 'Remote',
+    location: 'Hyderabad, Telangana, India',
     logo: AIFactorLogo,
-    brief: 'Developed full-stack applications with React frontend and Node.js backend. Integrated AI features and worked with REST APIs.',
-    description: 'During my internship at AI Factor, I worked on full-stack development projects, building both frontend and backend solutions. I gained hands-on experience with AI integration, database management, and API development.',
+    brief: 'Worked on the main production dashboard, a live analytics interface connected directly to the landing page. Built and optimized multiple sections of the Next.js + TypeScript web application.',
+    description: 'During my internship at AI Factor, I worked on the main production dashboard, a live analytics interface connected directly to the landing page. I built and optimized multiple sections of the Next.js + TypeScript web application, ensuring smooth real-time updates. I also contributed to the Shopify app, developing a fully functional chatbot widget integrated into Shopify stores.',
     responsibilities: [
-      'Built full-stack applications using MERN stack',
-      'Integrated AI/ML features into web applications',
-      'Designed and implemented RESTful APIs',
-      'Managed MongoDB databases and data models',
-      'Collaborated with cross-functional teams'
+      'Worked on the main production dashboard, a live analytics interface connected directly to the landing page',
+      'Built and optimized multiple sections of the Next.js + TypeScript web application, ensuring smooth real-time updates',
+      'Contributed to the Shopify app, where we developed a fully functional chatbot widget integrated into Shopify stores',
+      'Implemented live usage tracking for the widget, displaying analytics dynamically on the dashboard',
+      'Worked on role-based authentication and access control, ensuring secure and structured user permissions across the platform',
+      'Collaborated with the engineering team to improve app performance, UI consistency, and integration workflows between the Shopify app and the main site'
     ],
     techStack: [
+      'Next.js',
+      'TypeScript',
       'React',
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'AI/ML APIs',
-      'Redux Toolkit',
-      'JWT Authentication',
-      'Tailwind CSS'
+      'Shopify',
+      'Cursor',
+      'Authentication',
+      'API Integration'
     ],
     achievements: [
-      'Successfully integrated AI features into 3 client projects',
-      'Developed 5+ REST APIs with proper authentication',
-      'Reduced API response time by 35%'
+      'Built and optimized production dashboard with live analytics interface',
+      'Developed fully functional chatbot widget for Shopify stores',
+      'Implemented real-time usage tracking and analytics display',
+      'Improved app performance and UI consistency across platforms'
     ]
   },
   {
     id: 'to-let',
-    company: 'To-let',
-    role: 'Web Developer Intern',
+    company: 'To-Let Globe',
+    role: 'Frontend Developer',
     type: 'Internship',
-    period: 'Dec 2023 - Feb 2024',
-    duration: '3 months',
-    location: 'Remote',
+    period: 'Apr 2025 - Jul 2025',
+    duration: '4 months',
+    location: 'Lucknow, Uttar Pradesh, India',
     logo: ToLetLogo,
-    brief: 'Created responsive web interfaces and worked on property listing features. Focused on user experience and modern design principles.',
-    description: 'At To-let, I contributed to the development of a property listing platform. I worked on creating intuitive user interfaces, implementing search and filter functionality, and ensuring a seamless user experience across different devices.',
+    brief: 'Built responsive and dynamic user interfaces using React.js, Tailwind CSS, and JavaScript. Collaborated remotely with the development team on real-time web solutions.',
+    description: 'As a Frontend Developer Intern at To-Let Globe, I worked on building responsive and dynamic user interfaces using modern web technologies. I collaborated remotely with the development team on real-time web solutions and frontend integration, focusing on performance, mobile responsiveness, and seamless user experiences.',
     responsibilities: [
-      'Developed responsive property listing pages',
-      'Implemented search and filter functionality',
-      'Created interactive UI components',
-      'Optimized images and assets for web performance',
-      'Worked on form validation and user authentication'
+      'Built responsive and dynamic user interfaces using React.js, Tailwind CSS, and JavaScript',
+      'Collaborated remotely with the development team on real-time web solutions and frontend integration',
+      'Designed and implemented reusable components with a focus on performance and mobile responsiveness',
+      'Worked on state management, routing, and seamless API integration for various modules',
+      'Participated actively in sprint reviews and collaborative tasks, ensuring smooth team coordination',
+      'Gained practical experience with Git, task tracking tools, and professional development workflows'
     ],
     techStack: [
-      'HTML5',
-      'CSS3',
+      'React.js',
+      'Tailwind CSS',
       'JavaScript',
-      'React',
-      'Bootstrap',
+      'Cloudinary',
+      'Notistack',
       'Git',
-      'Figma'
+      'API Integration'
     ],
     achievements: [
-      'Built 10+ responsive web pages',
-      'Improved website accessibility score by 25%',
-      'Implemented advanced search filters'
+      'Achieved an Outstanding Rating in performance, excelling in dependability, learning, attitude, and output',
+      'Participated actively in sprint reviews and collaborative tasks, ensuring smooth team coordination',
+      'Gained practical experience with Git, task tracking tools, and professional development workflows',
+      'Completed a 66-day internship with strong feedback and formal appreciation from company leadership'
     ]
   }
 ]

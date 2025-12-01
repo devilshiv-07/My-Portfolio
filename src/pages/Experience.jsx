@@ -82,7 +82,7 @@ const Experience = () => {
               className="group relative bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-lg dark:shadow-slate-800/50 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:shadow-2xl hover:scale-105 cursor-pointer"
             >
               {/* Gradient Overlay on Hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-red-600/0 to-red-600/0 group-hover:from-red-600/10 group-hover:to-red-500/10 transition-all duration-300 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-red-600/0 to-red-600/0 group-hover:from-red-600/10 group-hover:to-red-500/10 transition-all duration-300 pointer-events-none"></div>
 
               {/* Card Content */}
               <div className="relative z-10 p-6 sm:p-7 md:p-8">
@@ -119,8 +119,8 @@ const Experience = () => {
                     <span>{experience.period}</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2 text-sm sm:text-base text-black dark:text-slate-300">
-                    <FaMapMarkerAlt className="text-red-600 dark:text-red-500" />
-                    <span>{experience.location}</span>
+                    <FaMapMarkerAlt className="text-red-600 dark:text-red-500 shrink-0" />
+                    <span className="text-center">{experience.location}</span>
                   </div>
                   <div className="flex items-center justify-center space-x-2 text-sm sm:text-base text-red-600 dark:text-red-400 font-medium">
                     <FaLaptopCode className="text-red-600 dark:text-red-500" />
@@ -148,7 +148,7 @@ const Experience = () => {
               </div>
 
               {/* Decorative Corner Accent */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-red-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+              <div className="absolute top-0 right-0 w-20 h-20 bg-linear-to-br from-red-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
             </div>
           ))}
         </div>
