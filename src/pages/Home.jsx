@@ -72,7 +72,7 @@ const Home = () => {
             
             <div className="pt-6 sm:pt-8 md:pt-10 lg:pt-4 flex justify-center lg:justify-start">
               <a
-                href="https://drive.google.com/file/d/1_JSUggUyCK7SXynLDrZLSvNJ3Niu16ju/view?usp=sharing"
+                href="https://drive.google.com/file/d/131Dghkcw87ZxZ22EC1VL5t6AybVMYNHO/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-block px-10 py-4 sm:px-12 sm:py-5 md:px-14 md:py-6 lg:px-8 lg:py-3 rounded-lg transition-all duration-300 transform hover:scale-105 resume-button"
